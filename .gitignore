@@ -1,0 +1,24 @@
+# FleetTrack
+.env
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Go build
+backend/tmp/
+*.exe
+
+# Build output
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
