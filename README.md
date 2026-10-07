@@ -237,6 +237,20 @@ Backend melakukan validasi ulang yang identik menggunakan struct tags `validate:
 
 ---
 
+## Workflow Penggunaan Agentic AI
+
+Pada pengerjaan test ini, Agentic AI digunakan secara ekstensif (sebagai *pair-programmer* / *autonomous developer*). Berikut adalah sejauh mana AI dilibatkan dalam proses pengerjaan:
+
+1. **Inisiasi & Setup Project**: AI membantu melakukan scaffolding struktur proyek (frontend & backend), serta setup konfigurasi `docker-compose.yml` untuk environment PostgreSQL.
+2. **Pengembangan Backend (Go)**: AI menulis kode RESTful API secara utuh menggunakan arsitektur *repository pattern*, mengintegrasikan GORM untuk interaksi database, Gin untuk HTTP router, dan melakukan setup sistem seeder/migrasi.
+3. **Pengembangan Frontend (React/Vite)**: AI membangun antarmuka pengguna, termasuk integrasi peta (*map*) menggunakan Leaflet, manajemen state dengan Zustand dan TanStack Query, serta setup validasi form secara *end-to-end* menggunakan Zod.
+4. **Testing, Debugging, & Refactoring**: AI secara mandiri memverifikasi kode, mengeksekusi *command* di terminal untuk melihat log error, dan memperbaiki masalah seperti dependensi yang *missing* atau *typo* pada variabel.
+5. **Dokumentasi & Version Control**: AI menyusun dokumentasi komprehensif (`README.md`) yang mencakup cara menjalankan aplikasi dan rasionalisasi library, serta menjalankan *command* Git untuk inisialisasi repositori dan push ke GitHub.
+
+Secara keseluruhan, proses pengerjaan (*coding*, desain arsitektur, dan *troubleshooting*) dilakukan oleh Agentic AI dari hulu ke hilir (*end-to-end*), sedangkan *user* berperan sebagai pemberi instruksi (prompt), pengarah kebutuhan proyek, dan *reviewer*.
+
+---
+
 ## Definition of Done
 
 - [x] React + TypeScript berjalan
